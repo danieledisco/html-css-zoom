@@ -42,6 +42,22 @@ body
 
 
 /* #region Utility */
+.align-items-center
+{
+        align-items: center;
+}
+.d-flex
+{
+        display: flex;
+}
+
+.col-7
+{
+        width: calc(100%/7);
+       /*  border: 1px solid red; */
+        padding: 4px 2px;
+}
+
 .cl_text
 {
         color: var(--color-text);
@@ -112,7 +128,26 @@ body
         margin-right: auto;
 
 }
+.row
+{
+        flex-wrap: wrap;
+}
+.col-7 > img
+{
+        max-width: 100%;
+}
 
+.name_speaker
+{
+        display: inline;
+        position: absolute;
+        bottom: 4px;
+        left: 0;
+        font-size: 0.5rem;
+        background-color: var(--color-end);
+        padding: 3px 4px;
+
+}
 /* #endregion Main */
 
 /* #region Footer */
