@@ -9,6 +9,7 @@
 body
 {
         font-family: Arial, Helvetica, sans-serif;
+        height: 100vh;
 }
 
 
@@ -17,7 +18,7 @@ body
         --color-footer: #222222;
         --color-main: #000000;
         --color-end: #4a4a4a;
-        --leave-end: #af3131;
+        --leave-end: #ca1212;
         --share-screen: #48bc05;
         --color-text: #ffffff;
 
@@ -61,6 +62,11 @@ body
 .cl_text
 {
         color: var(--color-text);
+}
+
+.cl_share
+{
+        color: var(--share-screen);
 }
 
 .absolute
@@ -126,6 +132,7 @@ body
         width: 90%;
         margin-left: auto;
         margin-right: auto;
+        padding-bottom: 1rem;
 
 }
 .row
@@ -151,10 +158,58 @@ body
 /* #endregion Main */
 
 /* #region Footer */
+#site_footer
+{
+        background-color: var(--color-footer);
+        justify-content: space-between;
+        align-items: center;
+
+}
+
+.icons
+{
+        padding: 0 10px;
+        text-align: center;
+        color: var(--color-text);
+}
+.label
+{
+        font-size: 0.4rem;
+        text-align: center;
+        white-space: nowrap;
+        color: var(--color-text);
+        padding: 0 10px;
+}
+
+.arrow
+{
+     align-self: center;
+     font-size: 0.4rem; 
+     padding: 0 0.5rem;  
+}
 
 
+
+
+
+
+
+
+.end_meeting
+{
+        text-align: center;
+        font-size: 0.4rem;
+        color: var(--leave-end);
+        background-color: var(--color-end);
+        width: 100px;
+        padding: 1rem 0;
+        
 
 /* #endregion Footer */
+
+
+
+
 
 /* #region Debug */
 
@@ -163,6 +218,11 @@ body
         border: 1px solid red;
         height: 500px;
 } */
-
-
+/* 
+.debug .sound_video, .debug .community, .debug .end
+{
+        border: 1px solid red;
+        height: 100px;
+}
+ */
 /* #endregion Debug */
